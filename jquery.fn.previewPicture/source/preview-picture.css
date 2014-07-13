@@ -1,0 +1,200 @@
+/**
+* @des 商品预览组件
+* @author jiangchaoyi update@2014.07.12
+*/
+img{
+	border: 0;
+}
+
+img.img-error {
+	background: url("loading.gif") no-repeat scroll 50% 50% transparent;
+}
+
+.prev-box{
+	position: relative;
+	width: 400px;
+}
+
+.prev-box .pic-big{
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	border: 1px solid #e4e4e4;
+	top: 0;
+	right: -410px;
+	overflow: hidden;
+	display: none;
+	border-radius:2px; 
+}
+
+.prev-box .pic-big img{
+	position: absolute;
+}
+
+.prev-box .pic-mid{
+	width: 400px;
+	height: 400px;
+	border: 1px solid #e4e4e4;
+	position: relative;
+}
+
+.prev-box .pic-mid .prev-drag-box{
+	overflow: hidden;
+	font-size: 0;
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.prev-box .pic-mid .prev-drag{
+	overflow: hidden;
+	font-size: 0;
+	width: 0;
+	height: 0;
+	z-index: 3;
+	position: absolute;
+	background: #000;
+	top: 0;
+	left: 0;
+	opacity: 0.1;
+	filter: alpha(opacity = 10);
+	display: none;	
+}
+
+
+.prev-box .pic-pager{
+	width: 400px;
+	height: 60px;
+	position: relative;
+}
+
+.prev-box .pic-pager .pager-btn{
+	position: absolute;
+	display: block;
+	width: 16px;
+	height: 60px;
+	line-height: 60px;
+	overflow: hidden;
+	top: 0;
+	font-size: 12px;
+	background-color: #f2f2f2;
+	color: #666;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	color: #999;
+	border-radius:2px; 
+}
+
+.prev-box .pic-pager .pager-btn:hover{
+	color: #fff;
+	background-color: #f60;
+}
+
+.prev-box .pic-pager .pager-btn-next{
+	right: 0;
+}
+
+.prev-box .pic-pager .pager-btn-pre{
+	left: 0;
+}
+
+.prev-box .pic-pager .pager-btn-disabled,.prev-box .pic-pager .pager-btn-disabled:hover{
+	background-color: #e4e4e4;
+	color: #fff;
+	cursor: text;
+}
+
+
+.prev-box .pic-pager .pic-list-box{
+	margin: 0 20px;
+	overflow: hidden;
+	margin-top: 10px;
+	position: relative;
+	height: 62px;
+}
+
+.prev-box .pic-pager .pic-list{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.prev-box .pic-pager .pic-list a{
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #e4e4e4;
+	float: left;
+	margin-right: 12px;
+	border-radius:2px; 
+}
+
+.prev-box .pic-pager .pic-list em{	
+	display: none;
+	top: -7px;
+	left: 24px;
+	position: absolute;
+	font-size: 0;
+	height: 0;
+	width: 0;
+	border-style: solid;
+	border-color: transparent transparent #f60 transparent;
+	border-width: 0 6px 6px 6px;
+}
+
+
+.prev-box .pic-pager .pic-list a img{
+	width: 60px;
+	height: 60px;
+}
+
+.prev-box .pic-pager .pic-list a:hover,.prev-box .pic-pager .pic-list .current{
+	width: 58px;
+	height: 58px;
+	border: 2px solid #f60;
+}
+
+.prev-box .pic-pager .pic-list a:hover img, .prev-box .pic-pager .pic-list .current img,.prev-box .pic-pager .pic-list .current:hover img{
+	width: 58px;
+	height: 58px;
+}
+
+.prev-box .pic-pager .pic-list .current em{
+	display: block;
+}
+
+.prev-box .prev-loading {
+	position: absolute;
+	z-index: 9;
+	text-align: center;
+	width: 160px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #fff;
+	left: 120px;
+	top: 210px;
+	background-color: #000;
+	background:rgba(0,0,0,.5);
+	filter: alpha(opacity = 50);
+	border-radius:20px; 
+}
+
+.prev-box .pic-big .prev-loading{
+	top: 140px;
+}
+
+/*数据为空的提示信息*/
+.prev-empty{
+	text-align: center;
+	width: 400px;
+	font-size: 12px;
+	color: #999;
+	height: 440px;
+	line-height: 440px;
+	border: 1px solid #e4e4e4;
+	border-radius:2px; 
+}

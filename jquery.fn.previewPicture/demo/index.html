@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>jquery.fn.previewPicture demo</title>
+		<link type="text/css" rel="stylesheet" href="../source/preview-picture.css">	
+	</head>
+	<body>
+		<div id="jGoodsImg">
+			<div class="prev-box">
+				<div class="pic-big">
+					<img class="img-error" src="http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!380" />
+					<div class="prev-loading">正在努力加载,请稍后...</div>
+				</div>
+				<div class="pic-mid">
+					<div class="prev-loading">正在努力加载,请稍后...</div>
+					<div class="prev-drag-box">
+						<div class="prev-drag"></div>
+						<img class="img-error" src="http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!380" />
+					</div>
+				</div>
+				<div class="pic-pager">
+					<a href="javascript:;" class="pager-btn pager-btn-disabled pager-btn-pre">&lt;</a>
+					<a href="javascript:;" class="pager-btn pager-btn-next">&gt;</a>
+					<div class="pic-list-box">
+						<div class="pic-list clearfix" style="width:1000px;">
+							<a href="" class="current">
+								<em></em>
+								<img class="img-error" src="../source/blank.gif" data-url=""/>
+							</a>
+							<a href="">
+								<em></em>
+								<img class="img-error" src="../source/blank.gif" data-url=""/>
+							</a>
+							<a href="">
+								<em></em>
+								<img class="img-error" src="../source/blank.gif" data-url=""/>
+							</a>
+							<a href="">
+								<em></em>
+								<img class="img-error" src="../source/blank.gif" data-url=""/>
+							</a>
+							<a href="">
+								<em></em>
+								<img class="img-error" src="../source/blank.gif" data-url=""/>
+							</a>
+							<a href="">
+								<em></em>
+								<img class="img-error" src="../source/blank.gif" data-url=""/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../jquery-1.11.1.min.js"></script>
+		<script src="../source/preview-picture.js"></script>
+		<script type="text/javascript">	
+		$('#jGoodsImg').previewPicture({
+			data : [
+				{
+					minImg : 'http://gi1.md.alicdn.com/bao/uploaded/i1/TB1BLVdFVXXXXc_XXXXXXXXXXXX_!!0-item_pic.jpg_60x60q90.jpg',
+					midImg : 'http://gi1.md.alicdn.com/bao/uploaded/i1/TB1BLVdFVXXXXc_XXXXXXXXXXXX_!!0-item_pic.jpg_460x460q90.jpg',
+					bigImg : 'http://gi1.md.alicdn.com/bao/uploaded/i1/TB1BLVdFVXXXXc_XXXXXXXXXXXX_!!0-item_pic.jpg'
+				},
+				{
+					minImg : 'http://gi3.md.alicdn.com/imgextra/i3/721190071/TB2qq90XVXXXXaCXXXXXXXXXXXX_!!721190071.jpg_60x60q90.jpg',
+					midImg : 'http://gi3.md.alicdn.com/imgextra/i3/721190071/TB2qq90XVXXXXaCXXXXXXXXXXXX_!!721190071.jpg_460x460q90.jpg',
+					bigImg : 'http://gi3.md.alicdn.com/imgextra/i3/721190071/TB2qq90XVXXXXaCXXXXXXXXXXXX_!!721190071.jpg'
+				},
+				{
+					minImg : 'http://img01.taobaocdn.com/bao/uploaded/i3/TB19pZZFFXXXXceaXXXXXXXXXXX_!!0-item_pic.jpg_120x120.jpg',
+					midImg : 'http://gi3.md.alicdn.com/bao/uploaded/i3/TB19pZZFFXXXXceaXXXXXXXXXXX_!!0-item_pic.jpg_460x460q90.jpg',
+					bigImg : 'http://gi3.md.alicdn.com/bao/uploaded/i3/TB19pZZFFXXXXceaXXXXXXXXXXX_!!0-item_pic.jpg_q30.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2013/11/280b2a3d-591f-44d7-acaf-1c6895a16055_3300x3300.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2013/11/280b2a3d-591f-44d7-acaf-1c6895a16055_3300x3300.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2013/11/280b2a3d-591f-44d7-acaf-1c6895a16055_3300x3300.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2014/2/0c236631-5cfb-4a05-b03c-145a0d344c02_380x380.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2013/11/9cae1b79-df5d-4b8f-a785-675fd9824efc_655x655.jpg'
+				},
+				{
+					minImg : 'http://img.taoyemall.com/i/2013/11/280b2a3d-591f-44d7-acaf-1c6895a16055_3300x3300.jpg!60',
+					midImg : 'http://img.taoyemall.com/i/2013/11/280b2a3d-591f-44d7-acaf-1c6895a16055_3300x3300.jpg!380',
+					bigImg : 'http://img.taoyemall.com/i/2013/11/280b2a3d-591f-44d7-acaf-1c6895a16055_3300x3300.jpg'
+				}
+			]
+		});	
+		</script>
+	</body>
+</html>
